@@ -55,8 +55,8 @@ for c in custnames:
     for s in SKUs:
         if totalPurchase[s]>0:
             round_avg = round(totalMoney[s]/totalPurchase[s],2)
-            print("Average price for " + s + ':' + str(totalMoney[s]/totalPurchase[s]))
-            openout.write("Average price for " + s + ':' + str(totalMoney[s]/totalPurchase[s])+ '\n')
+            print("Average price for " + s + ':' + str(round_avg))
+            openout.write("Average price for " + s + ':' + str(round_avg)+ '\n')
         else:
             print("Average Price for " + s + ':' + 'No Purchase History')
             openout.write("Average Price for " + s + ':' + 'No Purchase History'+ '\n')
