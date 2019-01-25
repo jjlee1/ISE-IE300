@@ -1,3 +1,0 @@
-This is an example file
-which contains several lines 
-of text to be read
